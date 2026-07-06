@@ -413,12 +413,17 @@ td {
 .full-game-card {
   display: grid;
   gap: 10px;
+  margin-top: 16px;
   padding: 26px;
   border: 1px solid rgba(180, 189, 196, 0.72);
   background: linear-gradient(135deg, rgba(0, 32, 91, 0.96), rgba(0, 136, 206, 0.82));
   color: var(--white);
   text-decoration: none;
   box-shadow: var(--shadow);
+}
+
+.full-game-card:first-of-type {
+  margin-top: 0;
 }
 
 .full-game-card span {
