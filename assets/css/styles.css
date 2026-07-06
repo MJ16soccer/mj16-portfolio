@@ -402,6 +402,51 @@ td {
   border: 0;
 }
 
+.full-game-section {
+  margin-top: 42px;
+}
+
+.compact-heading {
+  margin-bottom: 18px;
+}
+
+.full-game-card {
+  display: grid;
+  gap: 10px;
+  padding: 26px;
+  border: 1px solid rgba(180, 189, 196, 0.72);
+  background: linear-gradient(135deg, rgba(0, 32, 91, 0.96), rgba(0, 136, 206, 0.82));
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.full-game-card span {
+  color: var(--silver);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.full-game-card strong {
+  font-size: clamp(1.35rem, 3vw, 2.1rem);
+  line-height: 1.1;
+}
+
+.full-game-card em {
+  color: rgba(255, 255, 255, 0.78);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.full-game-card:hover,
+.full-game-card:focus-visible {
+  transform: translateY(-2px);
+  outline: 2px solid var(--carolina);
+  outline-offset: 4px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
