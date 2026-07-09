@@ -29,7 +29,7 @@
       .poster-content {
         width: min(520px, 56vw);
         padding-top: clamp(96px, 12vh, 124px);
-        padding-bottom: clamp(142px, 20vh, 178px);
+        padding-bottom: 230px;
       }
 
       .poster-content h1 {
@@ -46,8 +46,11 @@
       }
 
       .player-facts {
-        position: relative;
+        position: absolute;
+        left: clamp(28px, 3.5vw, 50px);
+        bottom: 154px;
         z-index: 4;
+        width: min(620px, calc(100vw - 96px));
       }
 
       .impact-panel {
@@ -77,7 +80,7 @@
 
         .poster-content {
           padding-top: 82px;
-          padding-bottom: 130px;
+          padding-bottom: 218px;
         }
 
         .poster-content h1 {
@@ -100,6 +103,7 @@
         }
 
         .player-facts {
+          bottom: 126px;
           gap: 12px;
         }
 
@@ -121,6 +125,15 @@
 
         .poster-image {
           transform: none;
+        }
+
+        .poster-content {
+          padding-bottom: 22px;
+        }
+
+        .player-facts {
+          position: static;
+          width: 100%;
         }
       }
     </style>
