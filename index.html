@@ -7,6 +7,123 @@
     <title>Mari Jackson | MJ16 Soccer Portfolio</title>
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+      .poster-hero {
+        height: calc(100svh - 28px);
+        min-height: 640px;
+      }
+
+      .poster-image {
+        object-position: 70% center;
+        transform: scale(1.06);
+        transform-origin: 72% center;
+      }
+
+      .poster-shade {
+        background:
+          radial-gradient(circle at 76% 22%, rgba(255, 255, 255, 0.8) 0%, rgba(76, 159, 255, 0.2) 24%, rgba(255, 255, 255, 0.06) 45%, rgba(255, 255, 255, 0) 64%),
+          linear-gradient(90deg, rgba(1, 6, 17, 0.98) 0%, rgba(2, 9, 26, 0.92) 31%, rgba(5, 14, 34, 0.46) 57%, rgba(5, 14, 34, 0.08) 100%),
+          linear-gradient(0deg, rgba(1, 6, 17, 0.98) 0%, rgba(1, 6, 17, 0.54) 20%, rgba(1, 6, 17, 0.02) 54%);
+      }
+
+      .poster-content {
+        width: min(520px, 56vw);
+        padding-top: clamp(96px, 12vh, 124px);
+        padding-bottom: clamp(142px, 20vh, 178px);
+      }
+
+      .poster-content h1 {
+        font-size: clamp(5.1rem, 10.7vw, 8.7rem);
+        line-height: 0.82;
+      }
+
+      .poster-copy {
+        margin-top: 18px;
+      }
+
+      .poster-actions {
+        margin: 16px 0 14px;
+      }
+
+      .player-facts {
+        position: relative;
+        z-index: 4;
+      }
+
+      .impact-panel {
+        bottom: 12px;
+      }
+
+      .impact-cards article {
+        min-height: 100px;
+        padding-top: 14px;
+        padding-bottom: 12px;
+      }
+
+      .impact-cards strong {
+        font-size: clamp(1.9rem, 3.3vw, 3.25rem);
+      }
+
+      @media (max-height: 740px) and (min-width: 900px) {
+        .home-header {
+          padding-top: 16px;
+          padding-bottom: 12px;
+        }
+
+        .home-brand {
+          width: clamp(150px, 17vw, 230px);
+          height: clamp(52px, 6vw, 76px);
+        }
+
+        .poster-content {
+          padding-top: 82px;
+          padding-bottom: 130px;
+        }
+
+        .poster-content h1 {
+          font-size: clamp(4.8rem, 9.5vw, 7.35rem);
+        }
+
+        .poster-copy {
+          font-size: 0.98rem;
+          line-height: 1.34;
+          margin-top: 14px;
+        }
+
+        .poster-button {
+          min-height: 46px;
+          padding: 11px 20px;
+        }
+
+        .player-facts dd {
+          font-size: 0.74rem;
+        }
+
+        .player-facts {
+          gap: 12px;
+        }
+
+        .impact-title {
+          margin-bottom: 4px;
+        }
+
+        .impact-cards article {
+          min-height: 88px;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .poster-hero {
+          height: auto;
+          min-height: 100svh;
+        }
+
+        .poster-image {
+          transform: none;
+        }
+      }
+    </style>
   </head>
   <body class="home-page">
     <header class="site-header home-header" data-header>
@@ -53,7 +170,7 @@
           <dl class="player-facts" aria-label="Player quick facts">
             <div>
               <dt>Position</dt>
-              <dd>Forward / AM</dd>
+              <dd>Forward / Attacking Midfielder</dd>
             </div>
             <div>
               <dt>Height</dt>
@@ -77,29 +194,29 @@
           </div>
           <div class="impact-cards">
             <article>
-              <span class="impact-icon">G</span>
-              <strong>44</strong>
-              <span>Goals</span>
-            </article>
-            <article>
-              <span class="impact-icon">A</span>
-              <strong>18</strong>
-              <span>Assists</span>
-            </article>
-            <article>
               <span class="impact-icon">GP</span>
-              <strong>32</strong>
+              <strong>63</strong>
               <span>Games Played</span>
             </article>
             <article>
-              <span class="impact-icon">PW</span>
-              <strong>7</strong>
-              <span>Player of the Week</span>
+              <span class="impact-icon">G</span>
+              <strong>12</strong>
+              <span>Career Goals</span>
             </article>
             <article>
-              <span class="impact-icon">AC</span>
-              <strong>2</strong>
-              <span>All-Conference</span>
+              <span class="impact-icon">A</span>
+              <strong>1</strong>
+              <span>Career Assists</span>
+            </article>
+            <article>
+              <span class="impact-icon">GM</span>
+              <strong>1x</strong>
+              <span>GMAC Player of the Week</span>
+            </article>
+            <article>
+              <span class="impact-icon">NM</span>
+              <strong>1x</strong>
+              <span>Northwood Player of the Month</span>
             </article>
           </div>
         </div>
